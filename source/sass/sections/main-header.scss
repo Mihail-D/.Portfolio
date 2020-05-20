@@ -1,0 +1,79 @@
+.main-header {
+	margin: 0 auto;
+	width: 1200px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-menu {
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 650px;
+}
+
+.main-menu__item {
+	padding-left: 5px;
+	padding-right: 5px;
+	position: relative;
+	display: flex;
+	width: auto;
+	border: 2px solid #ffffff;
+	border-radius: 0 4px 4px 0;
+	background-color: #293241;
+}
+
+.main-menu__item a {
+	color: #ffffff;
+	font-family: "Montserrat", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 41px;
+}
+
+.main-menu__item a:hover {
+	color: orange;
+}
+
+.main-menu__item a:before {
+	position: absolute;
+	top: -2px;
+	left: -48px;
+	width: 45px;
+	height: 43px;
+	background: #ffffff;
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	background-position: 50% 50%;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	content: "";
+}
+
+.main-menu :nth-child(1) a:before {
+	background-image: url("/img/html5.svg");
+}
+
+.main-menu :nth-child(2) a:before {
+	display: flex;
+	justify-content: center;
+	border: 2px solid #ffffff;
+	background-color: orange;
+	content: "JS";
+	height: 41px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.main-menu :nth-child(3) a:before {
+	background-image: url("/img/react.svg");
+}
+
+.main-menu :nth-child(4) a:before {
+	background-image: url("/img/exclamation.svg");
+}
