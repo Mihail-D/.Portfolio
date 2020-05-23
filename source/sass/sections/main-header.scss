@@ -1,10 +1,11 @@
 .main-header {
 	margin: 0 auto;
-	width: 1200px;
+	width: 1300px;
 	height: 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #131313;
 }
 
 .main-menu {
@@ -26,7 +27,7 @@
 	background-color: #293241;
 }
 
-.main-menu__item a {
+.main-nav__link {
 	color: #ffffff;
 	font-family: "Montserrat", Arial, Helvetica, sans-serif;
 	font-size: 20px;
@@ -34,8 +35,12 @@
 	line-height: 41px;
 }
 
-.main-menu__item a:hover {
+.main-nav__link--active {
 	color: orange;
+}
+
+.main-menu__item a:not(.main-nav__link--active):hover {
+	text-shadow: 1px 1px 2px orange, 0 0 1em orange;
 }
 
 .main-menu__item a:before {
@@ -54,7 +59,7 @@
 }
 
 .main-menu :nth-child(1) a:before {
-	background-image: url("../img/html5.svg");
+	background-image: url("../img/menu-html5.svg");
 }
 
 .main-menu :nth-child(2) a:before {
@@ -71,9 +76,9 @@
 }
 
 .main-menu :nth-child(3) a:before {
-	background-image: url("../img/react.svg");
+	background-image: url("../img/menu-react.svg");
 }
 
 .main-menu :nth-child(4) a:before {
-	background-image: url("../img/exclamation.svg");
+	background-image: url("../img/menu-exclamation.svg");
 }

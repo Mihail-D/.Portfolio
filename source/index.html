@@ -12,23 +12,54 @@
 	</head>
 
 	<body>
-
+		<header class="main-header">
+			<nav class="main-nav" id="main-nav">
+				<ul class="main-menu">
+					<li class="main-menu__item">
+						<a class="main-nav__link main-nav__link--active" href="#"
+							>Вёрстка</a
+						>
+					</li>
+					<li class="main-menu__item">
+						<a class="main-nav__link" href="#">Javascript</a>
+					</li>
+					<li class="main-menu__item">
+						<a class="main-nav__link" href="#">React</a>
+					</li>
+					<li class="main-menu__item">
+						<a class="main-nav__link" href="#">Информация</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<main class="main-block">
 			<h1 class="page-header visually-hidden">Резюме front-end разработчика</h1>
+
+			<picture>
+				<source
+					type="image/webp"
+					media="(min-width: 1300px)"
+					srcset="img/*.webp 1x, img/*@2.webp 2x"
+				/>
+
+				<source
+					type="image/webp"
+					media="(min-width: 768px)"
+					srcset="img/*.webp 1x, img/*@2.webp 2x"
+				/>
+
+				<img
+					class=""
+					src="img/*"
+					srcset="img/*@2x.png"
+					alt=""
+					width=""
+					height=""
+				/>
+			</picture>
+
 			<!-- <h2 class="greetings">привет <span>!</span></h2>
 			<h2 class="greetings">я <span>михаил</span>, а это мои <span>работы</span>.</h2> -->
-
-			<header class="main-header">
-				<nav class="main-nav">
-					<ul class="main-menu">
-						<li class="main-menu__item"> <a href="#">Вёрстка</a></li>
-						<li class="main-menu__item"> <a href="#">Javascript</a></li>
-						<li class="main-menu__item"> <a href="#">React</a></li>
-						<li class="main-menu__item"> <a href="#">Информация</a></li>
-					</ul>
-				</nav>
-			</header>
-
 		</main>
 		<!-- <footer class="main-footer"></footer> -->
 		<script src="js/script.js"></script>
