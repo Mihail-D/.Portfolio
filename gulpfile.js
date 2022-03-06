@@ -1,29 +1,28 @@
 /* eslint-disable no-undef */
-"use strict";
 
-var gulp = require("gulp");
-var server = require("browser-sync").create();
-var plumber = require("gulp-plumber");
+import gulp from "gulp";
+import plumber from "gulp-plumber";
+import rename from "gulp-rename";
+import del from "del";
+import terser from "gulp-terser";
+import posthtml from "gulp-posthtml";
+import include from "posthtml-include";
+import htmlmin from "gulp-htmlmin";
+import csso from "gulp-csso";
+import sourcemap from "gulp-sourcemaps";
+import postcss from "gulp-postcss";
+import autoprefixer from "autoprefixer";
+import gulpImagemin from "gulp-imagemin";
+import imageminPngquant from "imagemin-pngquant";
+import svgstore from "gulp-svgstore";
+import webp from "gulp-webp";
 
-var rename = require("gulp-rename");
-var del = require("del");
+import dartSass from "sass";
+import gulpSass from "gulp-sass";
+const sass = gulpSass(dartSass);
 
-const terser = require("gulp-terser");
-
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
-var htmlmin = require("gulp-htmlmin");
-
-var sass = require("gulp-sass");
-var csso = require("gulp-csso");
-var sourcemap = require("gulp-sourcemaps");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-
-var gulpImagemin = require("gulp-imagemin");
-const imageminPngquant = require("imagemin-pngquant");
-var svgstore = require("gulp-svgstore");
-var webp = require("gulp-webp");
+import server from "browser-sync";
+server.create;
 
 gulp.task("images", function() {
 	return gulp
