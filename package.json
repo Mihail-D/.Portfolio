@@ -11,7 +11,7 @@
 		"autoprefixer": "9.5.x",
 		"babel-core": "^6.26.3",
 		"babel-preset-es2015": "^6.24.1",
-		"browser-sync": "2.26.x",
+		"browser-sync": "2.29.x",
 		"del": "^6.0.0",
 		"gulp": "4.0.x",
 		"gulp-csso": "^4.0.1",
